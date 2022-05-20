@@ -480,6 +480,7 @@ class DayCare
         indices.push(i)
       end
       commands.push(_INTL("CANCEL"))
+      text = "Choose which pokemon to withdraw from the Day Care"
       command = pbMessage(text, commands, commands.length)
       $game_variables[choice_var] = (command == commands.length - 1) ? -1 : indices[command]
     end
